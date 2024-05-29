@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val fragments:List<Fragment>
         init {
             fragments = listOf(OneFragment())
-            // kangdan TODO
+            // TODO
         }
 
         override fun getItemCount(): Int {

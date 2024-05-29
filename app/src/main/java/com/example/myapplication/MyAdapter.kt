@@ -18,10 +18,10 @@ class MyAdapter(val datas: MutableList<String>) : RecyclerView.Adapter<RecyclerV
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        Log.i("kangdan", "position : $position")
-        Log.i("kangdan", "position : ${datas[position]}")
+        Log.i("Log >>>> ", "position : $position")
+        Log.i("Log >>>> ", "position : ${datas[position]}")
         val binding = (holder as MyViewHolder).binding
-        binding.itemTextView.text = datas[position]
+        binding.itemTextView.text = datas[position]     //값을 세팅
 
 
 

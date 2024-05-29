@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     var datas = mutableListOf<String>()
 
 
+
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +27,6 @@ class MainActivity : AppCompatActivity() {
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         binding.startButton.setOnClickListener {
             binding.chronometer.base = SystemClock.elapsedRealtime() + pauseTime
@@ -40,9 +40,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.lapButton.setOnClickListener {
 
-            Log.i("kangdan", binding.chronometer.text.toString())
+            Log.i("Log >>>> ", binding.chronometer.text.toString())
             datas.add(datas.size , binding.chronometer.text.toString())
-            Log.i("kangdan", datas.toString())
+            Log.i("Log >>>> ", datas.toString())
 
             binding.recyclerView.layoutManager = LinearLayoutManager(applicationContext)
             binding.recyclerView.adapter = MyAdapter(datas)
