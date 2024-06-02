@@ -1,3 +1,4 @@
+import org.jetbrains.kotlin.gradle.plugin.statistics.ReportStatisticsToElasticSearch.enable
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -33,10 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-//
-//    viewBinding {
-//        enable = true
-//    }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
