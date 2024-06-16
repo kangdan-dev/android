@@ -1,4 +1,4 @@
-import org.jetbrains.kotlin.gradle.plugin.statistics.ReportStatisticsToElasticSearch.enable
+//import org.jetbrains.kotlin.gradle.plugin.statistics.ReportStatisticsToElasticSearch.enable
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
